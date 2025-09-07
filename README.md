@@ -81,7 +81,12 @@ Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza
 <img width="700" height="auto" alt="image" src="https://github.com/user-attachments/assets/cb2e2f3a-48dd-42bf-9a08-67dddfbffa53" />
 
 7. E por último, após a criação da VM, libere as seguintes portas de entrada
-<img width="1007" height="200" alt="image" src="https://github.com/user-attachments/assets/1ea3822d-a251-4a29-a772-e5842d396c99" />
+<img width="1007" height="200" alt="image" src="https://github.com/user-attachments/assets/1ea3822d-a251-4a29-a772-e5842d396c99" />  
+
+---
+
+> [!NOTE]
+> é importante que você mude a **linha SSID**, **password** e do **IP**, para que fique de acordo com a sua própria maquina, os que estão no sketch.ino deste repositório **se baseia nesse projeto em específico**
 
 ---
 **Instalação do Docker no ambiente Linux (Feito em um sistema com gerenciador de pacotes "apt")**  
