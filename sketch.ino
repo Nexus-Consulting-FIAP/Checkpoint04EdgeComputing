@@ -2,6 +2,13 @@
 //Resumo: Esse programa possibilita ligar e desligar o led onboard, além de mandar o status para o Broker MQTT possibilitando o Helix saber
 //se o led está ligado ou desligado.
 
+// Daniel Oliveira de Souza     RM: 566284
+// Felipe Campos Vianna Peres   RM: 562752
+// João Pedro Raimundo Marcilio RM: 561603
+// João Pedro Ribeiro Palermo   RM: 562077
+// Lucas de Almeida Pires       RM: 562757
+// Lucas Zanella Clemente       RM: 563880
+
 #include <WiFi.h>
 #include <PubSubClient.h>
 
