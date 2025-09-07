@@ -17,7 +17,7 @@
    
 2. [Funcionalidades](#funcionalidades)
    
-3. [Componentes](#componentes)
+3. [Componentes Físicos](#componentes-físicos)
   
 4. [Como usar](#como-usar)
    
@@ -32,11 +32,11 @@ Por ainda estar em fase de protótipo,  não foi definido ainda uma conexão ent
 
 ---
 
-### Componentes
+### Componentes físicos
 
 | Componente | Quantidade |
 |--|--|
-|ESP32|1|
+|ESP32 DEVKIT V1|1|
 |LDR|1|
 |Jumpers|3|
 
@@ -55,12 +55,17 @@ Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza
 ---
 ### Como usar
 
+|Bíblioteca|Função|
+|--|--|
+|[WiFi.h](https://docs.arduino.cc/libraries/wifi)|Permite que o arduino conecte a internete WiFi|
+|[PubSubClient.h](https://docs.arduino.cc/libraries/pubsubclient)|Permite que o arduino mande e receba mensagens MQTT|
 
 
 ---
 ### Links para visualização
 
 [Simulação no WokWi](https://wokwi.com/projects/381403531345819649)
+[Video no YouTube demonstrando o projeto](https://youtu.be/L4Cd7HWDTmM)
 
 ---
 
