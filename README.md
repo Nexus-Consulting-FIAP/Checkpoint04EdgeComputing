@@ -13,11 +13,15 @@
 
 ## Índice
 
-1. [Descrição](#descricao)
+1. [Descrição](#descrição)
+   
 2. [Funcionalidades](#funcionalidades)
-2. [Componentes](#componentes)
-3. [Como usar](#como-usar)
-4. [Links](#links-para-visualização)
+   
+3. [Componentes](#componentes)
+  
+4. [Como usar](#como-usar)
+   
+5. [Links](#links-para-visualização)
 
 ---
 
@@ -39,9 +43,9 @@ Por ainda estar em fase de protótipo,  não foi definido ainda uma conexão ent
 
 ### Funcionalidades
 
-***Monitoramento de Luminosidade (☀️)***
+***Lampada e luminosidade (☀️)***
 
-Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza
+Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza um medimento no terminal de quão claro está. Com base nesse medimento, o projeto decidir se ele irá ligar a lampada ou mante-la desligada
 
 ---
 ### Como usar
@@ -52,3 +56,8 @@ Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza
 ### Links para visualização
 
 [Simulação no WokWi](https://wokwi.com/projects/381403531345819649)
+
+---
+
+> Criado pelo [Grupo Nexus](https://github.com/Nexus-Consulting-FIAP)
+
