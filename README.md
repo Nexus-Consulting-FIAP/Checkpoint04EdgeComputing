@@ -64,7 +64,7 @@ Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza
 ---
 ### Links para visualização
 
-[Simulação no WokWi](https://wokwi.com/projects/441460431040464897)
+[Simulação no WokWi](https://wokwi.com/projects/441460431040464897)  
 [Video no YouTube demonstrando o projeto](https://youtu.be/L4Cd7HWDTmM)
 
 ---
