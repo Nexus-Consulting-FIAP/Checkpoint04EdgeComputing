@@ -27,9 +27,9 @@
 
 ### Descrição
 
-O projeto <ins>Smart Lamp</ins> do grupo Nexus é um protótipo de lâmpada inteligente que se conecta à internet. Utilizando um ESP32, o dispositivo é capaz de interagir com uma plataforma de backend para oferecer controle e monitoramento remoto.
+O projeto <ins>Smart Lamp</ins> do grupo **Nexus** é  um protótipo de lâmpada inteligente que se conecta à internet. Utilizando um **ESP32**, o dispositivo é capaz de interagir com uma plataforma de backend para oferecer controle e monitoramento remoto.
 
-O sistema possui um sensor de luz LDR que mede a claridade do ambiente. Esses dados são transmitidos em tempo real para a plataforma FIWARE, onde podem ser acessados e visualizados online. Além de enviar dados, o Smart Lamp também pode receber comandos. Através da plataforma, é possível ligar ou desligar seu LED remotamente, demonstrando uma comunicação bidirecional completa.
+O sistema possui um ***sensor de luz LDR*** que mede a claridade do ambiente. Esses dados são transmitidos em tempo real para a plataforma **FIWARE**, onde podem ser acessados e visualizados online. Além de enviar dados, o Smart Lamp também pode receber comandos. Através da plataforma, é possível ligar ou desligar seu LED remotamente, demonstrando uma comunicação bidirecional completa.
 
 ---
 
