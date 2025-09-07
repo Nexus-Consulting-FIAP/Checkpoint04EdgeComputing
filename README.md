@@ -14,14 +14,16 @@
 ## Índice
 
 1. [Descrição](#descrição)
+
+2. [Requisitos e Componentes](#requisitos-e-componentes)
    
-2. [Funcionalidades](#funcionalidades)
+3. [Funcionalidades](#funcionalidades)
    
-3. [Componentes Físicos](#componentes-físicos)
-  
-4. [Como usar](#como-usar)
+4. [Como instalar](#como-instalar)
+
+5. [Como usar](#como-usar)
    
-5. [Links](#links-para-visualização)
+6. [Links](#links-para-visualização)
 
 ---
 
@@ -33,7 +35,22 @@ O sistema possui um ***sensor de luz LDR*** que mede a claridade do ambiente. Es
 
 ---
 
-### Componentes físicos
+## Requisitos e Componentes
+
+### Requisitos técnicos
+- Ambiente em nuvem ou possibilidade de self-hot
+- Conexão 2.4GHz de Internet
+- Roteador Wi-Fi
+
+Algumas bibliotecas que devem estar em seu sistema antes de compilar o código:
+|Bíblioteca|Função|
+|--|--|
+|[WiFi.h](https://docs.arduino.cc/libraries/wifi)|Permite que o arduino conecte a internete WiFi|
+|[PubSubClient.h](https://docs.arduino.cc/libraries/pubsubclient)|Permite que o arduino mande e receba mensagens MQTT|
+
+
+
+### Componentes físicos do protótipo
 
 | Componente | Quantidade |
 |--|--|
@@ -49,12 +66,14 @@ O sistema possui um ***sensor de luz LDR*** que mede a claridade do ambiente. Es
 
 ### Funcionalidades
 
-***Lampada e luminosidade (☀️)***
+***Lampada  (💡)***
+Acende uma lampada por rede no momento em que o usuário interagir por uma API Rest.
 
-Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza um medimento no terminal de quão claro está. Com base nesse medimento, o projeto decidir se ele irá ligar a lampada ou mante-la desligada
+***Luminosidade (☀️)***
+Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza um medimento no terminal de quão claro está.
 
 ---
-### Como usar
+### Como instalar
 
 - Logue na sua plataforma de nuvem (no tutorial sera feito no azure)
 1. Acesse Máquina Virtual e vamos criar uma nova instância de uma VM
@@ -85,10 +104,6 @@ Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza
 
 ---
 
-> [!NOTE]
-> é importante que você mude a **linha SSID**, **password** e do **IP**, para que fique de acordo com a sua própria maquina, os que estão no sketch.ino deste repositório **se baseia nesse projeto em específico**
-
----
 **Instalação do Docker no ambiente Linux (Feito em um sistema com gerenciador de pacotes "apt")**  
 1. Digite apt upgrade para atualizar a lista de pacotes do sistema  
 ```sudo apt upgrade -y```
@@ -107,15 +122,23 @@ Mede a intensidade da luz no ambiente por meio de um sensor LDR, e disponibiliza
 
 **Pronto sistema montado!**
 
-
+> [!NOTE]
+> é importante que você mude as variáveis **SSID**, **PASSWORD** e de **BROKER_MQTT** do arquivo <b>sketch.ino</b>, para que fique de acordo com o seu ambiente desejado. Os valores encontrados nesse repositório, no sketch.ino referem-se **nesse projeto em específico**
 ---
 
-|Bíblioteca|Função|
-|--|--|
-|[WiFi.h](https://docs.arduino.cc/libraries/wifi)|Permite que o arduino conecte a internete WiFi|
-|[PubSubClient.h](https://docs.arduino.cc/libraries/pubsubclient)|Permite que o arduino mande e receba mensagens MQTT|
+### Como usar
 
+1 - Importe o postman-collection desse reposítorio em seu Postman para ter os caminhos da API na mão.
 
+   1.1 - Verifique os healthchecks do projeto para verificar se a conexão é estabelecidade.
+
+2 - Registre seu dispositivo no <b>3. Provisioning a Smart Lamp</b>. (Veja o exemplo do body)
+
+3 - Após a etapa anterior, registre os comandos do dispositivo registrado para habilitar a transferência de dados pela rede em <b>4. Registering Smart Lamp Commands</b>. (Veja o exemplo do body)
+
+4 - Pronto! Ele está preparado para ser usado. Aproveite e entre no caminho <b>7. Result of  Smart Lamp Luminosity</b> para ver a luminosidade detectada no ambiente respectivo.
+
+Extra - A plataforma já vem com opções de STH e Orion Broker juntas para mais funções, como obtenção de históricos e recebimento de dados novos. Confira eles dentro da documentação do Postman.
 ---
 ### Links para visualização
 
