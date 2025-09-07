@@ -40,8 +40,10 @@ Por ainda estar em fase de protótipo,  não foi definido ainda uma conexão ent
 |LDR|1|
 |Jumpers|3|
 
-<img width="782" height="699" alt="esquema_fisico" src="https://github.com/user-attachments/assets/386b4d9d-56b5-4640-bd52-10864b7461e3" />
+<img width="300" height=auto alt="esquema_fisico" src="https://github.com/user-attachments/assets/386b4d9d-56b5-4640-bd52-10864b7461e3" />  
+
 > Screenshot do projeto dentro do WokWi
+
 ---
 
 ### Funcionalidades
