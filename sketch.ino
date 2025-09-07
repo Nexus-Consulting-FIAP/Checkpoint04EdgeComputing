@@ -1,20 +1,14 @@
-//Autor: Fábio Henrique Cabrini
+//Autores: Fábio Henrique Cabrini & Lucas Demetrius Augusto 
 //Resumo: Esse programa possibilita ligar e desligar o led onboard, além de mandar o status para o Broker MQTT possibilitando o Helix saber
 //se o led está ligado ou desligado.
-//Revisões:
-//Rev1: 26-08-2023 Código portado para o ESP32 e para realizar a leitura de luminosidade e publicar o valor em um tópico aprorpiado do broker 
-//Autor Rev1: Lucas Demetrius Augusto 
-//Rev2: 28-08-2023 Ajustes para o funcionamento no FIWARE Descomplicado
-//Autor Rev2: Fábio Henrique Cabrini
-//Rev3: 1-11-2023 Refinamento do código e ajustes para o funcionamento no FIWARE Descomplicado
-//Autor Rev3: Fábio Henrique Cabrini
+
 #include <WiFi.h>
 #include <PubSubClient.h>
 
 // Configurações - variáveis editáveis
-const char* default_SSID = "Wokwi-GUEST"; // Nome da rede Wi-Fi
-const char* default_PASSWORD = ""; // Senha da rede Wi-Fi
-const char* default_BROKER_MQTT = "172.210.176.191"; // IP do Broker MQTT
+const char* default_SSID = "Wokwi-GUEST"; // Nome da rede Wi-Fi (Deixar Wokwi-GUEST se estiver no simulador)
+const char* default_PASSWORD = ""; // Senha da rede Wi-Fi (Deixar vázio se estiver no simulador)
+const char* default_BROKER_MQTT = "172.210.176.191"; // IP do Broker MQTT (IP da máquina virtual)
 const int default_BROKER_PORT = 1883; // Porta do Broker MQTT
 const char* default_TOPICO_SUBSCRIBE = "/TEF/lamp001/cmd"; // Tópico MQTT de escuta
 const char* default_TOPICO_PUBLISH_1 = "/TEF/lamp001/attrs"; // Tópico MQTT de envio de informações para Broker
